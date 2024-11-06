@@ -23,8 +23,7 @@ jobs:
       IMAGE_NAME: 99999598  
   
     steps:
-   steps:
-    - uses: actions/checkout@v4
+     - uses: actions/checkout@v4
       with:
         token: ${{ secrets.REPO_TOKEN }}
         
