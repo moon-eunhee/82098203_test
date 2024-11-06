@@ -20,7 +20,7 @@ jobs:
     runs-on: workflow_dispatch
 
     env:
-      IMAGE_NAME: 99999598  
+      IMAGE_NAME: 82098203  
   
     steps:
     - uses: actions/checkout@v4
