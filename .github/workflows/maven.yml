@@ -6,22 +6,17 @@
 # separate terms of service, privacy policy, and support
 # documentation.
  
-name: Java CI with Maven
+name: github action CI
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: workflow_dispatch
+
+env:
+  IMAGE_NAME: 82098203
 
 jobs:
   build:
+    runs-on: ubuntu-latest
 
-    runs-on: workflow_dispatch
-
-    env:
-      IMAGE_NAME: 82098203  
-  
     steps:
     - uses: actions/checkout@v4
       with:
